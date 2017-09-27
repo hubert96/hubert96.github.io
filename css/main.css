@@ -1,0 +1,28 @@
+.display-3 {
+  font-size: 14px;
+  color: red; }
+
+.first-section {
+  height: 100vh;
+  background: #E9E8E4;
+  color: #363a46; }
+
+.hubert-logo {
+  width: 100px;
+  height: 100px;
+  background: inherit;
+  outline: 3px solid #2A2C24;
+  color: #2A2C24;
+  position: relative;
+  z-index: 1; }
+  .hubert-logo:before {
+    width: 100px;
+    height: 100px;
+    background: #869D7A;
+    content: " ";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1; }
+
+/*# sourceMappingURL=main.css.map */
