@@ -4,21 +4,41 @@
   color: #363a46; }
 
 .hubert-logo {
-  width: 100px;
-  height: 100px;
+  width: 101px;
+  height: 1001px;
   background: inherit;
   outline: 3px solid #2A2C24;
   color: #2A2C24;
   position: relative;
   z-index: 1; }
   .hubert-logo:before {
-    width: 101px;
-    height: 101px;
+    width: 100px;
+    height: 100px;
     background: #869D7A;
     content: " ";
     position: absolute;
     left: 10px;
     top: 10px;
     z-index: -1; }
+
+@media (min-width: 0px) {
+  * {
+    font-size: 50%; } }
+
+@media (min-width: 576px) {
+  * {
+    font-size: 80%; } }
+
+@media (min-width: 768px) {
+  * {
+    font-size: 90%; } }
+
+@media (min-width: 992px) {
+  * {
+    font-size: 95%; } }
+
+@media (min-width: 1200px) {
+  * {
+    font-size: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
