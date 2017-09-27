@@ -6,20 +6,23 @@ $first-slide-bg2: #E6E5E1
 	height: 100vh
 	background: $first-slide-bg
 	color: $first-slide-color
+	position: relative
 
 
 .hubert-logo 
-	width: 101px
-	height: 1001px
+	width: 100px
+	height: 100px
 	background: inherit
-	outline: 3px solid #2A2C24
-	color: #2A2C24
-	position: relative
+	outline: 3px solid #212120
+	color: #212120
+	position: absolute
 	z-index: 1
+	top: 50px
+	left: 50px
 	&:before
 		width: 100px
 		height: 100px
-		background: #869D7A
+		background: #56BEA2
 		content: " "
 		position: absolute
 		left: 10px
@@ -27,24 +30,25 @@ $first-slide-bg2: #E6E5E1
 		z-index: -1
 
 @media (min-width: 0px)
-	*
-		font-size: 50%
+	.display-3
+		font-size: 2.0rem
+	.hubert-logo
 
 @media (min-width: 576px)
-	*
-		font-size: 80%
+	.display-3
+		font-size: 2.5rem
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px)
-	*
-		font-size: 90%
+	.display-3
+		font-size: 3.0rem
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px)
-	*
-		font-size: 95%
+	.display-3
+		font-size: 3.5rem
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px)
-	*
-		font-size: 100%
+	.display-3
+		font-size: 4.5rem
