@@ -1,54 +1,84 @@
-$first-slide-color: #363a46
-$first-slide-bg: #E9E8E4
-$first-slide-bg2: #E6E5E1
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
 
-.first-section
+$color1 = #04E762
+$color2 = #F5B700
+$color3 = #DC0073
+$color4 = #008BF8
+
+html, body
+	margin: 0 auto
+	font-family: 'Bree Serif', serif;
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+
+.row
+	display: flex
+	flex-wrap: wrap
+
+.flex-item
+	flex: 1
+
+.item-fluid
+	flex: 100%
+	text-align: center
+
+.section-first
 	height: 100vh
-	background: $first-slide-bg
-	color: $first-slide-color
-	position: relative
+	.first-box-1
+		height: 50vh
+		background: #04E762
+		color: #DC0073
+	.first-box-2
+		height: 50vh
+		background: #F5B700
+		color: #008BF8
+		button
+			border-color: #008BF8
+			color: #008BF8
+			&:hover 
+				background: #008BF8
+				color: #F5B700
+	.first-box-3
+		height: 50vh
+		background: #DC0073
+		color: #04E762
+		button
+			border-color: #04E762
+			color: #04E762
+			&:hover 
+				background: #04E762
+				color: #DC0073
+	.first-box-4
+		height: 50vh
+		background: #008BF8
+		color: #F5B700
+		button
+			border-color: #F5B700
+			color: #F5B700
+			&:hover 
+				background: #F5B700
+				color: #008BF8
+	.box
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+			button
+		 		background: inherit
+				padding: 10px 30px
+				font-family: 'Bree Serif', serif;
+				border: 2px solid black
+				font-size: 16px
+			h1, button
+				transition: all 1.3s
+			&:hover
+				h1
+					transform: scale(1.5)
+				button
+					transform: translate(100%)
 
-
-.hubert-logo 
-	width: 100px
-	height: 100px
-	background: inherit
-	outline: 3px solid #212120
-	color: #212120
-	position: absolute
-	z-index: 1
-	top: 50px
-	left: 50px
-	&:before
-		width: 100px
-		height: 100px
-		background: #56BEA2
-		content: " "
-		position: absolute
-		left: 10px
-		top: 10px
-		z-index: -1
-
-@media (min-width: 0px)
-	.display-3
-		font-size: 2.0rem
-	.hubert-logo
-
-@media (min-width: 576px)
-	.display-3
-		font-size: 2.5rem
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px)
-	.display-3
-		font-size: 3.0rem
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px)
-	.display-3
-		font-size: 3.5rem
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px)
-	.display-3
-		font-size: 4.5rem
+.about-me
+	height: 100vh
+	background:
