@@ -146,6 +146,8 @@ ul {
         .container-box .my-work .content .works .work {
           height: 100%;
           flex: 1; }
+          .container-box .my-work .content .works .work:hover img {
+            filter: brightness(115%); }
           .container-box .my-work .content .works .work img {
             width: 100%; }
   .container-box .expand-after-first-slide {
