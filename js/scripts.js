@@ -8,7 +8,9 @@ const firstSlide = document.getElementById('expand-this-first'); // First slide 
 const aboutMe = document.getElementById('about-me'); // About me page
 const skills = document.getElementById('skills'); // Skills page
 const myWork = document.getElementById('my-work'); // My work page 
-const content = document.getElementById('content'); 
+const content1 = document.getElementById('content1'); 
+const content2 = document.getElementById('content2'); 
+const content3 = document.getElementById('content3'); 
 
 
 // Elements
@@ -52,12 +54,15 @@ const bg = document.getElementById('body');
 
 var color = 0;
 var element = 0;
+var content = "";
+
 
 function zmiennik(value) {
 	switch (value) {
 		case "green":
 			color = "#2ecc71";
 			element = aboutMe;
+			content = content1;
 			break;
 		case "ham":
 			color = "#f1c40f";
@@ -65,11 +70,13 @@ function zmiennik(value) {
 			break;
 		case "blue":
 			color = "#3498db";
-			element = skills;
+			element = myWork;
+			content = content3;
 			break;
 		case "turk":
 			color = "#1abc9c";
-			element = myWork;
+			element = skills;
+			content = content2;
 			break;
 	}
 }

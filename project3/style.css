@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Ultra");
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  color: #313332; }
+
+header {
+  background: #313332;
+  height: 50px;
+  padding: 0 100px; }
+
+h1, h2, h3 {
+  text-transform: uppercase; }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.row:before, .row:after {
+  display: table;
+  content: ""; }
+
+.row:after {
+  clear: both; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+.col-offset-2 {
+  margin-left: 16.66%; }
+
+.col-offset-1-5 {
+  margin-left: 12.5%; }
+
+[class*="col-"] {
+  float: left;
+  position: relative; }
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right; }
+  header nav ul li {
+    display: inline-block; }
+    header nav ul li a {
+      text-decoration: none;
+      line-height: 50px;
+      padding: 0 20px;
+      display: block;
+      color: #fff;
+      text-transform: uppercase;
+      transition: color 0.3s; }
+      header nav ul li a:hover {
+        color: #ED1C24; }
+header img {
+  height: 50px; }
+
+section {
+  margin-bottom: 100px; }
+  section .container {
+    text-align: center; }
+
+.hero {
+  height: 70vh;
+  background: url("https://image.ibb.co/kg4ixQ/hero.jpg") top/cover;
+  position: relative; }
+
+.slogan {
+  background: rgba(0, 0, 0, 0.5);
+  right: 0px;
+  margin-left: 55%;
+  top: 15%;
+  padding: 10px 15px;
+  color: white;
+  text-align: left;
+  position: absolute; }
+  .slogan h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ED1C24; }
+  .slogan p {
+    font-size: 36px; }
+
+.profits {
+  background: white;
+  margin: 0 12.5%; }
+  .profits i {
+    font-size: 64px;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    border-radius: 10px; }
+  .profits .fa {
+    background-color: #313332;
+    border: 3px solid #313332; }
+  .profits .special-fa {
+    background-color: #ED1C24;
+    border-color: #ED1C24; }
+
+.justice {
+  color: #ED1C24; }
+
+.experience h2 {
+  font-size: 48px;
+  font-weight: bold; }
+
+.gallery .container {
+  max-width: none; }
+.gallery img {
+  width: 100%;
+  height: 256px;
+  float: left;
+  object-fit: cover; }
+.gallery [class*="col-"]:hover .layer {
+  visibility: visible;
+  opacity: 1; }
+.gallery .layer {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 256px;
+  line-height: 256px;
+  word-spacing: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  transition: opacity 0.5s linear; }
+  .gallery .layer i {
+    background: white;
+    border: 12px solid white;
+    border-radius: 5px;
+    font-size: 24px; }
+    .gallery .layer i:hover {
+      color: white;
+      background: #ED1C24;
+      border-color: #ED1C24; }
+
+.team h3 {
+  min-width: 200px;
+  text-align: center; }
+
+.person-circle {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  position: relative; }
+  .person-circle:hover .position {
+    visibility: visible;
+    opacity: 1; }
+  .person-circle img {
+    border-radius: 50%; }
+
+.position {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 200px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s linear; }
+
+.weight {
+  background: url("http://image.ibb.co/gaL6Z5/bg.png");
+  color: white;
+  padding: 10px 0;
+  font-size: 16px; }
+  .weight p {
+    text-align: left;
+    padding: 10px; }
+  .weight h1 {
+    font-weight: bold;
+    font-size: 48px; }
+  .weight img {
+    width: 100%;
+    padding: 80px 0; }
+  .weight p:nth-child(2) {
+    font-style: italic; }
+
+.numbers .col {
+  margin: 0 auto; }
+
+.numbers h2 {
+  font-size: 64px;
+  font-weight: bold;
+  font-family: "Ultra", serif; }
+.numbers h3 {
+  font-size: 24px;
+  color: #ED1C24; }
+
+footer {
+  background: #313332; }
+  footer h2 {
+    font-size: 28px;
+    font-weight: bold; }
+  footer p {
+    font-size: 18px; }
+  footer .col {
+    padding: 15px; }
+    footer .col h2, footer .col p, footer .col table {
+      text-align: left;
+      color: white; }
+  footer .fa {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background: #ED1C24;
+    color: white;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.4s; }
+  footer .fa-youtube {
+    background-color: #cd201f; }
+  footer .fa-google-plus {
+    background-color: #dd4b39; }
+  footer .fa-facebook {
+    background-color: #3b5999; }
+  footer .fa-dribbble {
+    background-color: #ea4c89; }
+  footer .fa-twitter {
+    background-color: #55acee; }
+  footer .fa-instagram {
+    background-color: #e4405f; }
+  footer .fa:hover {
+    background-color: white; }
+  footer .fa-youtube:hover {
+    color: #cd201f; }
+  footer .fa-google-plus:hover {
+    color: #dd4b39; }
+  footer .fa-facebook:hover {
+    color: #3b5999; }
+  footer .fa-dribbble:hover {
+    color: #ea4c89; }
+  footer .fa-twitter:hover {
+    color: #55acee; }
+  footer .fa-instagram:hover {
+    color: #e4405f; }
+  footer table td {
+    padding: 10px; }
+    footer table td:first-child {
+      font-weight: bold; }
+
+.copyright {
+  background: #252726;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px; }
+  .copyright p {
+    margin: 0;
+    padding: 3px 0; }
+
+.footer-separator {
+  margin-left: 10px;
+  width: 23%;
+  height: 2px;
+  background: white;
+  border: 0px;
+  display: inline-block; }
+
+@media (max-width: 768px) {
+  * {
+    float: none; }
+
+  header {
+    height: auto;
+    padding: 0; }
+    header img {
+      height: 50px;
+      display: block;
+      float: none;
+      margin: 0 auto; }
+    header nav ul {
+      float: none; }
+      header nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center; }
+
+  section {
+    margin-bottom: 50px; }
+
+  .slogan {
+    margin-left: 0;
+    top: 25%;
+    width: 100%;
+    padding: 10px 5px; }
+    .slogan p {
+      font-size: 24px; }
+
+  .slogan h1, .experience h2, .weight h1 {
+    font-size: 36px; }
+
+  .weight img {
+    width: 75%; }
+
+  [class*="col-"] {
+    width: 100%; }
+
+  [class*="col-offset-"] {
+    margin: 0; } }

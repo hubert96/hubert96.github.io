@@ -80,7 +80,7 @@ ul {
   position: relative;
   opacity: 0.9;
   box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75); }
-  .container-box .about-me, .container-box .skills, .container-box .my-work {
+  .container-box .about-me {
     width: 0px;
     height: 100%;
     background: white;
@@ -89,10 +89,65 @@ ul {
     left: 0;
     z-index: 2;
     transition: all 1s; }
-    .container-box .about-me .content, .container-box .skills .content, .container-box .my-work .content {
+    .container-box .about-me .content {
       display: none;
-      position: absolute;
-      bottom: -5px; }
+      height: 100%; }
+      .container-box .about-me .content .ja {
+        height: 100%;
+        float: left; }
+        .container-box .about-me .content .ja img {
+          height: 100%; }
+      .container-box .about-me .content .jaText {
+        float: left;
+        padding: 50px; }
+        .container-box .about-me .content .jaText h1 {
+          margin: 0; }
+  .container-box .skills {
+    width: 0px;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 1s; }
+    .container-box .skills .content {
+      padding: 50px;
+      display: none; }
+      .container-box .skills .content svg {
+        width: 125px;
+        margin-left: 15px; }
+  .container-box .my-work {
+    width: 0px;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 1s;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center; }
+    .container-box .my-work .content {
+      display: none;
+      height: 100%;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center; }
+      .container-box .my-work .content .works {
+        height: 100%;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center; }
+        .container-box .my-work .content .works .work {
+          height: 100%;
+          flex: 1; }
+          .container-box .my-work .content .works .work img {
+            width: 100%; }
   .container-box .expand-after-first-slide {
     width: 30px;
     height: 100%;
