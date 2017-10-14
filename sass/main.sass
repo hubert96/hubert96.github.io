@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif')
 @import url('https://fonts.googleapis.com/css?family=Nova+Flat')
-$yellow: #f1c40f
+$yellow: #f39c12
 $green: #2ecc71
 $blue: #3498db
 $turk: #1abc9c
@@ -32,6 +32,7 @@ body
 	position: absolute
 	left: 50px
 	z-index: 0
+	cursor: pointer
 
 .logo-h
 	width: 75px
@@ -42,7 +43,7 @@ body
 	outline: 3px solid black
 	position: absolute
 	z-index: 1
-	transition: all 1.5s
+	transition: all 1.5s 
 	&:after
 		width: 75px
 		height: 75px
@@ -72,6 +73,7 @@ ul
 	display: none;
 	cursor: pointer
 	z-index: 3
+	transition: all 0.5s
 	&:hover
 		transform: translate(0px, -2px) scale(1.1)
 	&:before
@@ -81,6 +83,8 @@ ul
 		left: -80px
 		top: 10px
 
+span
+	background-color: $green
 
 
 .container-box
@@ -102,7 +106,9 @@ ul
 		.content
 			display: none
 			height: 100%
+			width: 100%
 			.ja
+				width: 50%
 				height: 100%
 				float: left
 				img
@@ -110,9 +116,18 @@ ul
 					//border-radius: 25%
 			.jaText
 				float: left
-				padding: 50px	
-				h1
-					margin: 0
+				width: 50%
+				.container
+					padding-left: 50px
+					li
+						font-size: 18px
+						margin-top: 10px
+						i
+							width: 30px
+							height: 30px
+							margin-right: 5px
+							padding: 3px
+
 	.skills
 		width: 0px	
 		height: 100%
@@ -173,17 +188,33 @@ ul
 			line-height: 8px
 			text-align: center
 			cursor: pointer
+			transition: all 0.3s
 			&:hover
-				transform: translate(0px, -2px) scale(1.1)
+				transform: translate(0px, -2px) scale(1.4)
 		.menu
 			display: none
 			ul
 				li
 					margin: 25px 0
+					position: relative
+
 					a
 						color: #ecf0f1
-						&:hover
-							color: #7f8c8d
+					&:after
+						position: absolute
+						left: 50%
+						top: 24px
+						width: 0
+						height: 2px
+						background: #ecf0f1
+						transition: all 0.7s
+						content: " "
+					&:hover
+						&:after
+							left: 15%
+							width: 70%
+
+			
 		.details
 			@include flex-center
 			display: none

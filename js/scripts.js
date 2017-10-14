@@ -19,8 +19,9 @@ const menu = document.getElementById('menu'); // Menu div
 const details = document.getElementById('details'); // details div
 
 // Width Switches
-const ham = document.getElementById('ham'); // hamburger
+const ham = document.querySelector("div.ham"); // hamburger
 ham.addEventListener("click", maxWidth); // and his listener
+
 
 const crossFirstSlide = document.getElementById('crossFirstSlide'); // Closing first slide cross
 crossFirstSlide.addEventListener('click', minWidth);  // And his click listener
@@ -65,7 +66,7 @@ function zmiennik(value) {
 			content = content1;
 			break;
 		case "ham":
-			color = "#f1c40f";
+			color = "#f39c12";
 			element = firstSlide;
 			break;
 		case "blue":
@@ -91,7 +92,7 @@ function changeColor() {
 
 function backColor() {
 	if(flag == 0){
-		firstSlide.style.background = "#f1c40f";
+		firstSlide.style.background = "#f39c12";
 		bg.style.opacity = "0";
 	}
 }
