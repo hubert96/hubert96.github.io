@@ -19,7 +19,9 @@ const menu = document.getElementById('menu'); // Menu div
 const details = document.getElementById('details'); // details div
 
 // Width Switches
+const clickHere = document.querySelector("div.click-here-sm");
 const ham = document.querySelector("div.ham"); // hamburger
+clickHere.addEventListener("click", maxWidth);
 ham.addEventListener("click", maxWidth); // and his listener
 
 
@@ -103,6 +105,7 @@ function maxWidth() {
 	zmiennik(this.id);
 	element.style.width = "100%";
 
+
 	if(id != 'ham'){
 		flag = 1;
 	}
@@ -111,6 +114,7 @@ function maxWidth() {
 	setTimeout(function(){
 		if(id == "ham") {
 			ham.style.display = "none";
+			clickHere.style.display = "none";
 			crossFirstSlide.style.display = "block";
 			logoH.style.top = "45%";
 			logoH.style.transform = "scale(1.2)";
@@ -122,7 +126,7 @@ function maxWidth() {
 				content.style.display = "block";
 				console.log('cross on!');
 			}
-	}, 500);
+	}, 200);
 	
 
 }
@@ -138,6 +142,7 @@ function minWidth() {
 	if(id == "crossFirstSlide"){
 		firstSlide.style.width = "30px";
 		ham.style.display = "block";
+		clickHere.style.display = "block";
 		crossFirstSlide.style.display = "none";
 		logoH.style.top = "50px";
 		logoH.style.transform = "scale(1.0)";

@@ -33,6 +33,16 @@ body
 	left: 50px
 	z-index: 0
 	cursor: pointer
+.click-here-sm
+	display: none
+	writing-mode: vertical-rl
+	text-orientation: mixed	
+	color: black
+	transform: rotate(180deg)
+	position: absolute
+	z-index: 0
+	left: 5px
+	top: calc(45vh - 140px) 
 
 .logo-h
 	width: 75px
@@ -85,6 +95,7 @@ ul
 
 span
 	background-color: $green
+	color: white
 
 
 .container-box
@@ -109,10 +120,9 @@ span
 			width: 100%
 			.ja
 				width: 50%
-				height: 100%
 				float: left
 				img
-					height: 100%
+					width: 100%
 					//border-radius: 25%
 			.jaText
 				float: left
@@ -138,12 +148,17 @@ span
 		z-index: 2
 		transition: all 1s
 		.content
+			height: 100%
 			padding: 50px
 			display: none
-			svg
-				width: 125px
-				margin-left: 15px
-				&:hover
+			.container
+				height: 100%
+				svg
+					width: 125px
+					margin: 15px
+					filter: brightness(85%)
+					&:hover
+						filter: brightness(110%)
 	.my-work
 		width: 0px	
 		height: 100%
@@ -157,19 +172,37 @@ span
 		.content
 			display: none
 			height: 100%
-			@include flex-center
 			.works
 				height: 100%
 				@include flex-center
+				flex-wrap: wrap
 				.work
-					height: 100%
 					flex: 1
+					position: relative
 					&:hover
-						img
-							filter: brightness(115%)	
+						.work-desc
+							opacity: 1
+							
 					img
 						width: 100%
-							
+					.work-desc
+						position: absolute
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						background: rgba(44, 62, 80,0.5)
+						opacity: 0
+						transition: opacity 0.3s
+						@include flex-center
+						flex-wrap: wrap
+						h5
+							flex: 100%
+							text-align: center
+						h3, h5
+							padding: 5px
+							color: black
+							background: white
 	.expand-after-first-slide
 		width: 30px
 		height: 100%
@@ -181,9 +214,9 @@ span
 		flex-wrap: wrap
 		color: #ecf0f1
 		@include flex-center
-		.ham
+		.ham 
 			width: 30px
-			height: 30px
+			height: 30px 
 			font-size: 36px
 			line-height: 8px
 			text-align: center
@@ -196,23 +229,23 @@ span
 			ul
 				li
 					margin: 25px 0
-					position: relative
 
 					a
 						color: #ecf0f1
-					&:after
-						position: absolute
-						left: 50%
-						top: 24px
-						width: 0
-						height: 2px
-						background: #ecf0f1
-						transition: all 0.7s
-						content: " "
-					&:hover
+						position: relative
 						&:after
-							left: 15%
-							width: 70%
+							position: absolute 
+							left: 45%
+							top: 24px
+							width: 0%
+							height: 2px
+							background: #ecf0f1
+							transition: all 0.7s
+							content: " "
+						&:hover
+							&:after
+								left: 5%
+								width: 90%
 
 			
 		.details
@@ -228,3 +261,53 @@ span
 		.logo-h
 			top: 50px
 			left: 80px
+
+// Small devices (landscape phones, 576px and down)
+@media (max-width: 576px)
+	.logo-h
+		//display: none
+	h1
+		font-size: 24px
+		margin-left: 35px
+
+// Medium devices (tablets, 768px and down)
+@media (max-width: 790px)
+	.click-here
+		display: none
+	.click-here-sm
+		display: block
+
+	.container-box
+		width: 100%
+		min-height: 100vh
+		opacity: 1
+		.about-me
+			height: initial
+			.content
+				.ja
+					width: 100%
+					float: none
+					img
+						height: 30%
+				.jaText
+					width: 100%
+					float: none
+					.container
+						padding: 0 5px
+						text-align: left
+						ul
+							margin: 0
+		.skills
+			height: initial
+		.my-work
+			.content
+				.works
+					.work
+						flex: 100%
+
+// Large devices (desktops, 992px and down)
+//@media (max-width: 992px)
+
+
+// Extra large devices (large desktops, 1200px and down)
+//@media (max-width: 1200px)
