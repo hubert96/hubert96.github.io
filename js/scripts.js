@@ -11,6 +11,7 @@ const myWork = document.getElementById('my-work'); // My work page
 const content1 = document.getElementById('content1'); 
 const content2 = document.getElementById('content2'); 
 const content3 = document.getElementById('content3'); 
+const opacity = document.getElementById('opacity');
 
 
 // Elements
@@ -110,6 +111,9 @@ function maxWidth() {
 		flag = 1;
 	}
 
+	if(id == "blue"){
+		opacity.style.opacity = "1";
+	}
 
 	setTimeout(function(){
 		if(id == "ham") {
