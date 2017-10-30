@@ -186,14 +186,15 @@ span {
         align-items: center;
         flex-wrap: wrap; }
         .container-box .my-work .content .works .work {
-          flex: 33.3%;
-          height: 33.3%;
-          position: relative; }
+          flex: 30%;
+          position: relative;
+          border: 3px solid #3498db;
+          margin: 0 5px;
+          box-sizing: border-box; }
           .container-box .my-work .content .works .work:hover .work-desc {
             opacity: 1; }
           .container-box .my-work .content .works .work img {
             width: 100%;
-            height: 100%;
             object-fit: cover; }
           .container-box .my-work .content .works .work .work-desc {
             position: absolute;
