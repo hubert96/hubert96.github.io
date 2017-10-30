@@ -149,6 +149,11 @@ span {
           filter: brightness(85%); }
           .container-box .skills .content .container svg:hover {
             filter: brightness(110%); }
+        .container-box .skills .content .container h3 {
+          background-color: #1abc9c;
+          display: inline-block;
+          color: white;
+          padding: 3px; }
   .container-box .my-work {
     width: 0px;
     height: 100%;
@@ -198,8 +203,8 @@ span {
               text-align: center; }
             .container-box .my-work .content .works .work .work-desc h3, .container-box .my-work .content .works .work .work-desc h5 {
               padding: 5px;
-              color: black;
-              background: white; }
+              color: white;
+              background: #3498db; }
   .container-box .expand-after-first-slide {
     width: 30px;
     height: 100%;
